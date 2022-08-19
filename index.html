@@ -14,7 +14,10 @@
   <script src="https://cdn.tailwindcss.com"></script>
 
   <!-- FontAwsome CDN -->
-  <script src="https://kit.fontawesome.com/5a6e447df1.js" crossorigin="anonymous"></script>
+  <!-- <script src="https://kit.fontawesome.com/5a6e447df1.js" crossorigin="anonymous"></script> -->
+
+  <!-- Bootstrap icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 
   <!-- Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,7 +30,7 @@
       theme: {
         extend: {
           colors: {
-            'golden': '#AD9970',
+            'gold': '#AD9970',
           },
           screens: {
             'sm': '750px',
@@ -40,8 +43,48 @@
   </script>
 </head>
 
-<body>
-  <nav></nav>
+<body style="font-family: 'Inter', sans-serif;">
+  <!-- <i class="bi bi-geo-alt mr-1"></i>
+        EN
+        <i class="bi bi-caret-down-fill ml-1"></i> -->
+  <nav class="bg-white flex py-1 px-4 items-center justify-between">
+    <div class="text-gray-700 flex items-center">
+      <i class="bi bi-list sm:hidden text-gray-500 mr-2 text-xl"></i>
+
+    </div>
+    <img class="w-[90px]" src="https://cdn.rode.com/website/images/logo/RODE_Logo_87x51_RGB.svg" alt="logo">
+    <i class="bi bi-search text-gray-500"></i>
+  </nav>
+
+  <!-- Card1 -->
+  <div class="grid grid-row-2 sm:bg-transparent bg-black sm:relative">
+    <div>
+      <img class="sm:hidden"
+        src="https://edge.rode.com/images/page/1/modules/5813/rode-rodecaster-pro-II-home-page-800x700-rgb.jpg">
+      <img class="hidden sm:block absolute -z-10 h-[530px] object-cover"
+        src="https://edge.rode.com/images/page/1/modules/5813/rode-rodecaster-pro-II-home-page-1920x700-rgb.jpg">
+    </div>
+    <div class="px-5 py-10 sm:flex sm:flex-col sm:w-screen sm:h-[530px] sm:justify-center items-end sm:pr-[100px]">
+      <div class="text-center sm:w-1/2 md:w-1/3">
+        <img class="w-[500px] mx-auto"
+          src="https://edge.rode.com/images/page/1/modules/5813/RODECasterProII_PL_PI_01.svg">
+        <h2 class="text-white text-center text-2xl my-[20px]">The Revolution Is Here</h2>
+        <p class="text-gray-500 leading-5 text-center">The RØDECaster Pro II is the world's most powerful all-in-one
+          audio
+          solution
+          for
+          streamers, podcasters,
+          musicians, and
+          creators. Take your content to the next level.</p>
+
+        <div class="flex items-center mt-[20px] justify-center gap-5">
+          <span class="text-gold cursor-pointer text-light">LEARN MORE <i class="bi bi-chevron-right"></i></span>
+          <a href="#" class="px-3 py-1.5 bg-gold rounded-full text-white font-semibold">BUY NOW</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </body>
 
 </html>
